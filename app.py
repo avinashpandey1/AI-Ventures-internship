@@ -4,7 +4,7 @@ from ivi import ask, append_interaction_to_chat_log
 
 app = Flask(__name__)
 # if for some reason your conversation with the bot gets weird, change the secret key 
-app.config['SECRET_KEY'] = '12345678'
+app.config['SECRET_KEY'] = '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'
 
 @app.route('/ivi', methods=['POST'])
 def jabe():
