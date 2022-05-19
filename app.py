@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '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'
 
 @app.route('/ivi', methods=['POST'])
-def jabe():
+def ivi():
     incoming_msg = request.values['Body']
     chat_log = session.get('chat_log')
     answer = ask(incoming_msg, chat_log)
